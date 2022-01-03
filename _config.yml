@@ -103,5 +103,9 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: aws-s3
-  repo: us-west-1
+  region: us-west-1
   bucket: just-another-gemini
+
+permissions:
+  id-token: write
+  contents: read
